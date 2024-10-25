@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIME DRIP</title>
+    <style>
+        /* Your CSS styles go here */
+        #dime-drip {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background-color: #FF5733;
+            border-radius: 50%;
+            animation: dime-drip 2s infinite;
+        }
+        
+        @keyframes dime-drip {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-50px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+        
+        /* Add your JavaScript code here */
+        <script>
+            // Your JavaScript code goes here
+            // Example: Add event listener to change the background color of the page when the dime drip animation ends
+            document.getElementById('dime-drip').addEventListener('animationend', function() {
+                document.body.style.backgroundColor = '#007bff'; // Change the background color to blue
+            });
+        </script>
+        
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
